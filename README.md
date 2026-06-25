@@ -1,5 +1,7 @@
 # ClashOfRim Third-Party Compatibility
 
+[简体中文](README_zh-CN.md)
+
 This optional package contains compatibility hooks for RimWorld mods that need
 extra handling when ClashOfRim projects, transfers, or settles multiplayer state.
 It is distributed separately from the main mod so compatibility patches can be
