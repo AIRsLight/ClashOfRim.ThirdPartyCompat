@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>AIRsLight.ClashOfRim.VehicleFramework.ServerPlugin</AssemblyName>
+    <RootNamespace>AIRsLight.ClashOfRim.ThirdPartyCompat.ServerPlugin</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>12.0</LangVersion>
+    <OutputPath>..\..\..\Assemblies\AIRsLight.ClashOfRim.VehicleFramework.ServerPlugin\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Source\Shared\ClashOfRim.Compatibility\ClashOfRim.Compatibility.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\..\..\Source\Shared\ClashOfRim.Save\ClashOfRim.Save.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\..\..\Source\Server\ClashOfRim.Network\ClashOfRim.Network.csproj" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\Shared\ThirdPartyCompatibilityPackageKeys.cs" Link="ThirdPartyCompatibilityPackageKeys.cs" />
+  </ItemGroup>
+</Project>

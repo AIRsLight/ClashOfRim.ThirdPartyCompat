@@ -1,0 +1,20 @@
+# Build outputs and local IDE state.
+/Assemblies/
+/Build/
+bin/
+obj/
+**/bin/
+**/obj/
+/.vs/
+/.vscode/
+*.user
+*.suo
+
+# Logs and temporary files.
+/Data/
+/Logs/
+*.log
+*.tmp
+*.cache
+Thumbs.db
+Desktop.ini

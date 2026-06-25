@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>ClashOfRim Third-Party Compatibility</name>
+  <author>AIRsLight</author>
+  <packageId>AIRsLight.ClashOfRim.ThirdPartyCompat</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>AIRsLight.ClashOfRim</packageId>
+      <displayName>ClashOfRim</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>AIRsLight.ClashOfRim</li>
+    <li>adaptive.storage.framework</li>
+  </loadAfter>
+  <description>
+    Optional compatibility module for ClashOfRim. It detects supported third-party mods at runtime and applies dedicated patches for multiplayer remote-map projection.
+  </description>
+</ModMetaData>
