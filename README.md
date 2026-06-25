@@ -24,6 +24,46 @@ needs to patch:
 The package detects supported mods at runtime. If a supported mod is not loaded,
 its compatibility hooks are skipped.
 
+## When a Mod Needs Compatibility
+
+A third-party mod usually needs a ClashOfRim compatibility hook only when it
+changes data that must survive multiplayer projection, transfer, or server-side
+settlement. Prefer leaving a mod alone unless one of these conditions applies.
+
+Add client compatibility when the mod:
+
+- stores runtime state on pawns, things, maps, lords, world objects, or comps
+  that is valid only in the original local game session;
+- adds custom containers, inventories, linked storage, vehicles, shuttles, or
+  other holders where contents must not be flattened into loose map items;
+- adds custom transfer-sensitive metadata to tradable things, gifts, shop
+  listings, pawn packages, corpses, sculptures, trophies, weapons, books, genes,
+  xenotypes, or similar objects;
+- adds custom world-map entry, landing, caravan, vehicle, or shuttle behavior
+  that can target a remote colony;
+- changes AI or lord behavior on remote maps in a way that can make projected
+  pawns attack, leave, steal, haul, repair, or clean up the wrong state;
+- requires post-restore rebuilding after a pawn or thing is deserialized, such
+  as cached verb managers, graphics, alien-race render state, or animation state.
+
+Add a server plugin when the server must understand the mod without loading the
+RimWorld client mod itself. Common cases are:
+
+- save-index extensions for custom containers, vehicles, pawn holders, or other
+  nested data that the server must inspect;
+- baseline requirements for custom hit point models, price inputs, terrain or
+  world data, trap classifiers, or other authoritative values;
+- raid settlement editors for custom damage models, vehicle parts, cargo loss,
+  packed contents, or special objects that cannot be evaluated from vanilla
+  thing fields alone;
+- compatibility checks that depend on the active server plugin set or on the
+  client's mod manifest.
+
+Compatibility is normally not needed for mods that only add ordinary defs using
+vanilla save fields, translations, textures, sounds, UI-only tools, cosmetic
+effects, or local single-player behavior that never crosses remote maps,
+transfers, snapshots, or settlement.
+
 ## Supported Client Compatibility
 
 ### Adaptive Storage Framework
@@ -82,7 +122,7 @@ Races compatibility.
 ## Server Plugins
 
 Server plugins are built into `Build\ServerPlugins` and copied into the server
-package `Plugins/` directory by `Tools\BuildWindowsServer.ps1`.
+package `Plugins/` directory by the main repository server packaging scripts.
 
 ### Adaptive Storage Server Plugin
 
