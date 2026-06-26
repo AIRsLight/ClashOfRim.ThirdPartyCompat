@@ -80,6 +80,8 @@ public static class AdaptiveStorageCompatibility
             return;
         }
 
+        CleanupStaleProjectionStorageCells();
+
         HashSet<IntVec3> cells = new();
         foreach (XElement container in mapElement
             .Descendants("thing")
@@ -117,10 +119,36 @@ public static class AdaptiveStorageCompatibility
 
     internal static bool IsProjectionStorageCell(Map map, IntVec3 cell)
     {
+        if (map is null
+            || !RemoteProjectionStorageCells.TryGetValue(map.uniqueID, out HashSet<IntVec3> cells)
+            || !cells.Contains(cell))
+        {
+            return false;
+        }
+
         return RemoteMapProjectionLoadScope.Active
-            && map is not null
-            && RemoteProjectionStorageCells.TryGetValue(map.uniqueID, out HashSet<IntVec3> cells)
-            && cells.Contains(cell);
+            || map.Parent is RemoteSessionMapParent;
+    }
+
+    private static void CleanupStaleProjectionStorageCells()
+    {
+        if (RemoteProjectionStorageCells.Count == 0)
+        {
+            return;
+        }
+
+        HashSet<int> activeRemoteMapIds = (Current.Game?.Maps ?? new List<Map>())
+            .Where(map => map?.Parent is RemoteSessionMapParent)
+            .Select(map => map.uniqueID)
+            .ToHashSet();
+
+        foreach (int mapId in RemoteProjectionStorageCells.Keys.ToList())
+        {
+            if (!activeRemoteMapIds.Contains(mapId))
+            {
+                RemoteProjectionStorageCells.Remove(mapId);
+            }
+        }
     }
 
     private static void HandleRemoteMapLoaded(
@@ -130,10 +158,7 @@ public static class AdaptiveStorageCompatibility
         ModSnapshotPackageMetadataDto package)
     {
         int forbidden = ForbidRemoteStoredThings(map);
-        if (map is not null)
-        {
-            RemoteProjectionStorageCells.Remove(map.uniqueID);
-        }
+        CleanupStaleProjectionStorageCells();
 
         if (forbidden > 0)
         {
@@ -294,7 +319,8 @@ public static class AdaptiveStorageCompatibility
     {
         string? className = element.Attribute("Class")?.Value?.Trim();
         return string.Equals(className, ThingClassName, StringComparison.Ordinal)
-            || string.Equals(className, "AdaptiveStorageFramework.AdaptiveStorage.ThingClass", StringComparison.Ordinal);
+            || string.Equals(className, "AdaptiveStorageFramework.AdaptiveStorage.ThingClass", StringComparison.Ordinal)
+            || element.Element("StoredThings") is not null;
     }
 
     private static bool TryParseIntVec3(string? value, out IntVec3 result)
