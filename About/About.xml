@@ -23,6 +23,6 @@
     <li>adaptive.storage.framework</li>
   </loadAfter>
   <description>
-    Optional compatibility module for ClashOfRim. It detects supported third-party mods at runtime and applies dedicated patches for multiplayer remote-map projection.
+    Optional compatibility package for Clash Of Rim. It detects supported third-party mods at runtime and enables dedicated hooks for remote maps, save snapshots, trade, gifts, pawn transfers, vehicles, storage containers, and raid settlement. This package does not provide multiplayer features by itself and must be used with the main Clash Of Rim mod.
   </description>
 </ModMetaData>
