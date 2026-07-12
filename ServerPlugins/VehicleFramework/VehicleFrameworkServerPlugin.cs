@@ -20,6 +20,10 @@ public sealed class VehicleFrameworkServerPlugin : IClashOfRimServerPlugin
                 ThirdPartyCompatibilityPackageKeys.VehicleFrameworkHitPointBaseline,
                 ThirdPartyCompatibilityPackageKeys.VehicleFrameworkSaveIndex,
                 ThirdPartyCompatibilityPackageKeys.VehicleFrameworkRaidSettlementDamage
+            },
+            RequiredPackageIds: new[]
+            {
+                ThirdPartyCompatibilityPackageKeys.VehicleFrameworkPackageId
             });
     }
 
