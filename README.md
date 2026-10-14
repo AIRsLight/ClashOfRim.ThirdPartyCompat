@@ -1,5 +1,7 @@
 # ClashOfRim Third-Party Compatibility
 
+Active source targets RimWorld 1.7 / .NET 10 / Harmony 3 only. `1.6/` is the frozen 0.3.4 payload and is no longer maintained; LoadFolders isolates it from current content. Do not edit frozen files. Build options and validation commands are documented in the parent repository README and `Tools/RimWorld.Client.props`.
+
 [简体中文](README_zh-CN.md)
 
 This optional package contains compatibility hooks for RimWorld mods that need

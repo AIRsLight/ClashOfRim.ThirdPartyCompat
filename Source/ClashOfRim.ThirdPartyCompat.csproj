@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <AssemblyName>AIRsLight.ClashOfRim.ThirdPartyCompat</AssemblyName>
     <RootNamespace>AIRsLight.ClashOfRim.ThirdPartyCompat</RootNamespace>
     <LangVersion>10.0</LangVersion>
@@ -10,9 +10,7 @@
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(NuGetPackageRoot)' == ''">
-    <NuGetPackageRoot>$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-  </PropertyGroup>
+  <Import Project="../../Tools/RimWorld.Client.props" />
 
   <ItemGroup>
     <ProjectReference Include="..\..\Source\Client\ClashOfRim.csproj" PrivateAssets="all" Private="false" />
@@ -21,21 +19,6 @@
 
   <ItemGroup>
     <Compile Include="..\Shared\ThirdPartyCompatibilityPackageKeys.cs" Link="ThirdPartyCompatibilityPackageKeys.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>$(NuGetPackageRoot)krafs.rimworld.ref\1.6.4566\ref\net472\Assembly-CSharp.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>$(NuGetPackageRoot)krafs.rimworld.ref\1.6.4566\ref\net472\UnityEngine.CoreModule.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="0Harmony">
-      <HintPath>$(NuGetPackageRoot)lib.harmony\2.4.1\lib\net472\0Harmony.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
   </ItemGroup>
 
   <Target Name="RemoveHostAssembliesFromCopyLocal" BeforeTargets="CopyFilesToOutputDirectory">

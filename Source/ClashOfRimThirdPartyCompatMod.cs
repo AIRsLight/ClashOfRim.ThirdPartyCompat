@@ -6,6 +6,7 @@ using AIRsLight.ClashOfRim.ThirdPartyCompat.VanillaExpandedFramework;
 using AIRsLight.ClashOfRim.ThirdPartyCompat.VehicleFramework;
 using AIRsLight.ClashOfRim.ThirdPartyCompatibility;
 using HarmonyLib;
+using RimWorld;
 using Verse;
 
 namespace AIRsLight.ClashOfRim.ThirdPartyCompat;
@@ -30,5 +31,7 @@ public sealed class ClashOfRimThirdPartyCompatMod : Mod
             HumanoidAlienRacesCompatibility.Apply(harmony);
             FacialAnimationCompatibility.Apply(harmony);
         });
+        Log.Message("[ClashOfRim.ThirdPartyCompat] Compatibility registration completed for RimWorld "
+            + VersionControl.CurrentVersionString + ".");
     }
 }

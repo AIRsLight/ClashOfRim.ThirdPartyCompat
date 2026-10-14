@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ClashOfRim.VehicleFramework.DefensePoint.EnterVehicle>进入载具</ClashOfRim.VehicleFramework.DefensePoint.EnterVehicle>
+  <ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleDesc>远程战斗地图生成时，绑定的人员会尝试进入附近载具。防御、固守和操作设备会让载具原地待命；出击会让载具主动进攻。</ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleDesc>
+  <ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleInspect>载具：绑定人员会进入附近载具。</ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleInspect>
+  <ClashOfRim.VehicleFramework.RemoteLanding.CreateCaravan>在此创建远行队</ClashOfRim.VehicleFramework.RemoteLanding.CreateCaravan>
+  <ClashOfRim.VehicleFramework.RemoteLanding.StartRaid>立即发起入侵</ClashOfRim.VehicleFramework.RemoteLanding.StartRaid>
+  <ClashOfRim.VehicleFramework.RemoteLanding.OrbitalNonHostileDisabled>无法向中立或友军轨道目标 {TARGET} 派遣载具</ClashOfRim.VehicleFramework.RemoteLanding.OrbitalNonHostileDisabled>
+  <ClashOfRim.VehicleFramework.RemoteLanding.RaidStartFailedNoCaravan>载具已降落，但没有找到可用于入侵的远行队。</ClashOfRim.VehicleFramework.RemoteLanding.RaidStartFailedNoCaravan>
+  <ClashOfRim.VehicleFramework.RemoteLanding.RaidUnavailable>该目标当前不可袭击。</ClashOfRim.VehicleFramework.RemoteLanding.RaidUnavailable>
+</LanguageData>

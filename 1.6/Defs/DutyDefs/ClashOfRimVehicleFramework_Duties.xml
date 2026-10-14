@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DutyDef>
+    <defName>ClashOfRim_VehicleDefenseAssault</defName>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="AIRsLight.ClashOfRim.ThirdPartyCompat.VehicleFramework.JobGiver_ClashVehicleAssaultGoto" />
+        <li Class="JobGiver_Idle" />
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+</Defs>

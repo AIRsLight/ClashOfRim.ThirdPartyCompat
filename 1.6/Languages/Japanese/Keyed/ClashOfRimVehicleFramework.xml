@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ClashOfRim.VehicleFramework.DefensePoint.EnterVehicle>乗り物に搭乗</ClashOfRim.VehicleFramework.DefensePoint.EnterVehicle>
+  <ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleDesc>遠隔戦闘マップが準備されると、割り当てられたポーンは近くの乗り物に搭乗しようとします。固守、防衛、設備操作では乗り物をその場に留め、突撃では乗り物に攻撃させます。</ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleDesc>
+  <ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleInspect>乗り物: 割り当てられたポーンは近くの乗り物に搭乗します。</ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleInspect>
+  <ClashOfRim.VehicleFramework.RemoteLanding.CreateCaravan>ここでキャラバンを編成</ClashOfRim.VehicleFramework.RemoteLanding.CreateCaravan>
+  <ClashOfRim.VehicleFramework.RemoteLanding.StartRaid>即座に襲撃を開始</ClashOfRim.VehicleFramework.RemoteLanding.StartRaid>
+  <ClashOfRim.VehicleFramework.RemoteLanding.OrbitalNonHostileDisabled>中立または同盟の軌道目標 {TARGET} へ乗り物を送れません</ClashOfRim.VehicleFramework.RemoteLanding.OrbitalNonHostileDisabled>
+  <ClashOfRim.VehicleFramework.RemoteLanding.RaidStartFailedNoCaravan>乗り物は着陸しましたが、襲撃用のキャラバンが見つかりませんでした。</ClashOfRim.VehicleFramework.RemoteLanding.RaidStartFailedNoCaravan>
+  <ClashOfRim.VehicleFramework.RemoteLanding.RaidUnavailable>この目標は現在襲撃できません。</ClashOfRim.VehicleFramework.RemoteLanding.RaidUnavailable>
+</LanguageData>

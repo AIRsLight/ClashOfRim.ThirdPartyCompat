@@ -6,3 +6,6 @@
 *.jpg binary
 *.jpeg binary
 *.ogg binary
+
+# Frozen payloads are byte-for-byte release artifacts, including their text files.
+1.6/** -text

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ClashOfRim.VehicleFramework.DefensePoint.EnterVehicle>Board vehicle</ClashOfRim.VehicleFramework.DefensePoint.EnterVehicle>
+  <ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleDesc>When a remote combat map is prepared, the assigned pawn will try to board a nearby vehicle. Hold, defend, and operate equipment keep the vehicle in place; assault makes the vehicle attack.</ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleDesc>
+  <ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleInspect>Vehicle: assigned pawn will board a nearby vehicle.</ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleInspect>
+  <ClashOfRim.VehicleFramework.RemoteLanding.CreateCaravan>Form caravan here</ClashOfRim.VehicleFramework.RemoteLanding.CreateCaravan>
+  <ClashOfRim.VehicleFramework.RemoteLanding.StartRaid>Begin raid immediately</ClashOfRim.VehicleFramework.RemoteLanding.StartRaid>
+  <ClashOfRim.VehicleFramework.RemoteLanding.OrbitalNonHostileDisabled>Cannot send a vehicle to neutral or allied orbital target {TARGET}</ClashOfRim.VehicleFramework.RemoteLanding.OrbitalNonHostileDisabled>
+  <ClashOfRim.VehicleFramework.RemoteLanding.RaidStartFailedNoCaravan>The vehicle has landed, but no caravan could be found for the raid.</ClashOfRim.VehicleFramework.RemoteLanding.RaidStartFailedNoCaravan>
+  <ClashOfRim.VehicleFramework.RemoteLanding.RaidUnavailable>This target cannot be raided right now.</ClashOfRim.VehicleFramework.RemoteLanding.RaidUnavailable>
+</LanguageData>

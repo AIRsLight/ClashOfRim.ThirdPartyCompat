@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ClashOfRim.VehicleFramework.DefensePoint.EnterVehicle>차량 탑승</ClashOfRim.VehicleFramework.DefensePoint.EnterVehicle>
+  <ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleDesc>원격 전투 지도가 준비되면 지정된 폰이 근처 차량에 탑승하려고 합니다. 고수, 방어, 장비 운용은 차량을 제자리에 두고, 돌격은 차량이 공격하도록 합니다.</ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleDesc>
+  <ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleInspect>차량: 지정된 폰이 근처 차량에 탑승합니다.</ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleInspect>
+  <ClashOfRim.VehicleFramework.RemoteLanding.CreateCaravan>여기에 원정대 편성</ClashOfRim.VehicleFramework.RemoteLanding.CreateCaravan>
+  <ClashOfRim.VehicleFramework.RemoteLanding.StartRaid>즉시 습격 시작</ClashOfRim.VehicleFramework.RemoteLanding.StartRaid>
+  <ClashOfRim.VehicleFramework.RemoteLanding.OrbitalNonHostileDisabled>중립 또는 동맹 궤도 목표 {TARGET}에는 차량을 보낼 수 없습니다</ClashOfRim.VehicleFramework.RemoteLanding.OrbitalNonHostileDisabled>
+  <ClashOfRim.VehicleFramework.RemoteLanding.RaidStartFailedNoCaravan>차량은 착륙했지만 습격에 사용할 원정대를 찾을 수 없습니다.</ClashOfRim.VehicleFramework.RemoteLanding.RaidStartFailedNoCaravan>
+  <ClashOfRim.VehicleFramework.RemoteLanding.RaidUnavailable>이 목표는 지금 습격할 수 없습니다.</ClashOfRim.VehicleFramework.RemoteLanding.RaidUnavailable>
+</LanguageData>

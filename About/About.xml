@@ -5,6 +5,7 @@
   <packageId>AIRsLight.ClashOfRim.ThirdPartyCompat</packageId>
   <supportedVersions>
     <li>1.6</li>
+    <li>1.7</li>
   </supportedVersions>
   <modDependencies>
     <li>

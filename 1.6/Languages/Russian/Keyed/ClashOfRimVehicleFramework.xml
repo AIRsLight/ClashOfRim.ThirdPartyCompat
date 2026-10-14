@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ClashOfRim.VehicleFramework.DefensePoint.EnterVehicle>Сесть в транспорт</ClashOfRim.VehicleFramework.DefensePoint.EnterVehicle>
+  <ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleDesc>Когда удаленная боевая карта готовится, назначенная пешка попытается сесть в ближайший транспорт. Удержание, оборона и управление орудием оставляют транспорт на месте; штурм заставляет транспорт атаковать.</ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleDesc>
+  <ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleInspect>Транспорт: назначенная пешка сядет в ближайший транспорт.</ClashOfRim.VehicleFramework.DefensePoint.EnterVehicleInspect>
+  <ClashOfRim.VehicleFramework.RemoteLanding.CreateCaravan>Сформировать караван здесь</ClashOfRim.VehicleFramework.RemoteLanding.CreateCaravan>
+  <ClashOfRim.VehicleFramework.RemoteLanding.StartRaid>Начать рейд немедленно</ClashOfRim.VehicleFramework.RemoteLanding.StartRaid>
+  <ClashOfRim.VehicleFramework.RemoteLanding.OrbitalNonHostileDisabled>Нельзя отправить транспорт к нейтральной или союзной орбитальной цели {TARGET}</ClashOfRim.VehicleFramework.RemoteLanding.OrbitalNonHostileDisabled>
+  <ClashOfRim.VehicleFramework.RemoteLanding.RaidStartFailedNoCaravan>Транспорт приземлился, но караван для рейда не найден.</ClashOfRim.VehicleFramework.RemoteLanding.RaidStartFailedNoCaravan>
+  <ClashOfRim.VehicleFramework.RemoteLanding.RaidUnavailable>Эту цель сейчас нельзя атаковать.</ClashOfRim.VehicleFramework.RemoteLanding.RaidUnavailable>
+</LanguageData>

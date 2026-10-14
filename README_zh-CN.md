@@ -1,5 +1,7 @@
 # ClashOfRim 第三方兼容包
 
+当前源码仅面向 RimWorld 1.7 / .NET 10 / Harmony 3。`1.6/` 是 0.3.4 时冻结的发布内容，不再维护；LoadFolders 将两代资源完全隔离。不要编辑冻结文件。构建参数与校验入口见主仓库 README 和 `Tools/RimWorld.Client.props`。
+
 [English](README.md)
 
 这是 ClashOfRim 的可选兼容包，用于处理在远程地图、物品流转、pawn 流转和袭击结算中需要额外适配的 RimWorld 第三方模组。它与主模组分开发行，这样只有在对应第三方模组存在时才启用相关补丁。
