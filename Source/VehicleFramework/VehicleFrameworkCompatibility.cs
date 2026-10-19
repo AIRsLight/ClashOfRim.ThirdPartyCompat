@@ -66,6 +66,7 @@ internal static class VehicleFrameworkCompatibility
 
         vehicleCaravanType = AccessTools.TypeByName("Vehicles.World.VehicleCaravan");
         vehiclePawnType = vehicleCaravanType?.Assembly.GetType("Vehicles.VehiclePawn") ?? AccessTools.TypeByName("Vehicles.VehiclePawn");
+        ClashOfRimCompatibilityApi.RegisterRemotePawnDefaultAiFilter(pawn => vehiclePawnType?.IsInstanceOfType(pawn) != true);
         aerialVehicleInFlightType = vehicleCaravanType?.Assembly.GetType("Vehicles.World.AerialVehicleInFlight") ?? AccessTools.TypeByName("Vehicles.World.AerialVehicleInFlight");
         compVehicleLauncherType = vehicleCaravanType?.Assembly.GetType("Vehicles.CompVehicleLauncher") ?? AccessTools.TypeByName("Vehicles.CompVehicleLauncher");
         arrivalOptionType = vehicleCaravanType?.Assembly.GetType("Vehicles.World.ArrivalOption") ?? AccessTools.TypeByName("Vehicles.World.ArrivalOption");
