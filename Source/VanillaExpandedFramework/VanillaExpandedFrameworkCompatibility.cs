@@ -125,13 +125,6 @@ internal static class VanillaExpandedFrameworkCompatibility
             object? manager = mvcfManagerMethod.Invoke(null, managerArgs);
             if (manager is null)
             {
-                // Freshly deserialized pawns have no entry in MVCF's weak cache.
-                // Manager(pawn, true) creates and initializes it; do not initialize twice.
-                if (managerParameters.Length == 2)
-                {
-                    managerArgs[1] = true;
-                    mvcfManagerMethod.Invoke(null, managerArgs);
-                }
                 return;
             }
 
