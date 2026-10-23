@@ -80,6 +80,10 @@ their packed contents when another player's map is loaded as a remote map, and
 marks packed remote contents so local pawns do not treat them as ordinary loose
 items.
 
+The 1.7 build requires ClashOfRim 0.4.5 or later. The main mod handles saved
+stack restoration for all storage; this package no longer increases cell
+capacity after loading.
+
 ### Vehicle Framework
 
 Package id: `SmashPhil.VehicleFramework`
